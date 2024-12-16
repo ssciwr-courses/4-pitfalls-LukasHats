@@ -5,11 +5,12 @@ def make_multiplier_of(n):
     mylist = []
     for i in n:
 
-        def multiplier(j):
-            return i * j
+        def multiplier(j, i=i):
+            return (i +1) * j
 
         mylist.append(multiplier)
     return mylist
+
 
 
 # for testing purposes, we wrap this in a function
