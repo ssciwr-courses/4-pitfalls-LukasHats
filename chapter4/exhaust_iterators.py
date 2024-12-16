@@ -1,5 +1,5 @@
 def exhaust_my_iterators(days, lunch):
-    menu = zip(days, lunch)
+    menu = list(zip(days, lunch))
     print(list(menu))
     full_menu = []
     for item in menu:
