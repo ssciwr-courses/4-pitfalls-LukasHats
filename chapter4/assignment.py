@@ -5,10 +5,11 @@ mylist = [1, 2, 3]
 # modify myfunc so that the global variable gets modified
 # meaning that mylist should become ["x"] also in the outer
 # scope
-def myfunc(mylist = mylist):
+def myfunc():
     # modify the global variable
+    global mylist
     mylist = ["x"]
-    return mylist
+    
     print(mylist, "value of global variable in the inner scope")
 
 
